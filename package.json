@@ -1,0 +1,7 @@
+{
+  "name": "capture",
+  "version": "1.0.0",
+  "dependencies": {
+    "html-screen-capture-js": "2.0.0"
+  }
+}

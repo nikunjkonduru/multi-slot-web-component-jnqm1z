@@ -1,5 +1,3 @@
-console.log('hello!');
-
 customElements.define(
   'user-card',
   class extends HTMLElement {
@@ -22,11 +20,10 @@ customElements.define(
 );
 
 function capture() {
-  console.log('capture');
   let div = document.getElementById('capture-div');
+  console.log('capture', div);
   html2canvas(div).then(function (canvas) {
     console.log('canvas', canvas);
-    document.getElementById('output').innerHTML = '';
     document.getElementById('output').appendChild(canvas);
   });
 }
